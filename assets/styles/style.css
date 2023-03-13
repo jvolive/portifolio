@@ -81,7 +81,6 @@ body {
   height: 100vh;
   padding: 80px;
   text-align: center;
-  background: var(--color-port2);
 }
 .intro-text {
   padding: 20px;
@@ -90,89 +89,277 @@ body {
 .intro h1 {
   font-size: 70px;
   line-height: 150px;
-  color: var(--color-port5);
+  color: var(--color-port2);
 }
 .intro h4 {
   font-size: 30px;
-  color: var(--color-port4);
+  color: var(--color-port1);
 }
 .intro p {
   font-size: 24px;
+  margin-bottom: 24px;
   text-justify: distribute-all-lines;
   text-align: center;
-  color: var(--color-white);
+  font-weight: bold;
+  color: var(--color-port1);
+}
+
+.icons-intro {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons-intro ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.icons-intro ul li {
+  list-style: none;
+  margin: 0 5px;
+}
+.icons-intro ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 45px;
+  color: var(--color-port2);
+  transition: 0.5s;
+}
+.icons-intro ul li a:hover {
+  color: #fff;
+  z-index: 0;
+}
+.icons-intro ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--color-port4);
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.5s;
+}
+.icons-intro ul li a:hover:before {
+  transform: scale(1);
+}
+.icons-intro ul li:nth-child(1) a:hover:before {
+  background: #000000;
+}
+.icons-intro ul li:nth-child(2) a:hover:before {
+  background: #0e76a8;
+}
+.icons-intro ul li:nth-child(3) a:hover:before {
+  background: #000000;
+}
+.icons-intro ul li:nth-child(4) a:hover:before {
+  background: #ff0000;
 }
 .about {
   width: 100%;
   height: 100vh;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 80px;
+  background: var(--color-port2);
 }
 .about-text {
   padding: 20px;
 }
 .about-text h2 {
-  font-size: 24px;
-  margin-bottom: 1rem;
-  line-height: 4rem;
-  color: var(--color-portifolio1);
+  font-size: 36px;
+  margin-bottom: 16px;
+  color: var(--color-port4);
+  text-align: center;
 }
 .about-text p {
-  margin-bottom: 4rem;
+  margin-bottom: 64px;
+  font-size: 24px;
   text-justify: distribute-all-lines;
   text-align: justify;
+  color: var(--color-port5);
+}
+.icons-about {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons-about ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.icons-about ul li {
+  list-style: none;
+  margin: 0 5px;
+}
+.icons-about ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 45px;
+  color: var(--color-port4);
+  transition: 0.5s;
+}
+.icons-about ul li a:hover {
+  color: #fff;
+  z-index: 0;
+}
+.icons-about ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--color-port4);
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.5s;
+}
+.icons-about ul li a:hover:before {
+  transform: scale(1);
+}
+.icons-about ul li:nth-child(1) a:hover:before {
+  background: #f24a1c;
+}
+.icons-about ul li:nth-child(2) a:hover:before {
+  background: #0170ba;
+}
+.icons-about ul li:nth-child(3) a:hover:before {
+  background: #ffdf00;
+}
+.icons-about ul li:nth-child(4) a:hover:before {
+  background: #f05033;
 }
 .projects {
   width: 100%;
   height: 100vh;
-  display: flex;
+  display: block;
   align-items: center;
-  justify-content: space-between;
-  padding: 80px;
+  padding: 60px;
 }
 .projects-text {
   padding: 20px;
 }
 .projects-text h2 {
-  font-size: 24px;
-  margin-bottom: 1rem;
-  line-height: 4rem;
-  color: var(--color-portifolio1);
+  font-size: 36px;
+  color: var(--color-port2);
+  text-align: center;
 }
 .projects-text p {
-  margin-bottom: 4rem;
+  font-size: 24px;
   text-justify: distribute-all-lines;
-  text-align: justify;
+  text-align: center;
+  color: var(--color-port3);
 }
-.contact {
-  width: 100%;
-  height: 100vh;
+.projects-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.projects1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+}
+.projects1 a {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--color-port3);
+}
+.projects1 img {
+  width: 500px;
+  height: auto;
+  margin-bottom: 10px;
+  border: 1px solid var(--color-port3);
+  border-radius: 10px;
+}
+.projects1 p {
+  font-size: 16px;
+}
+.projects2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects2 a {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.projects2 img {
+  width: 500px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.projects2 p {
+  font-size: 16px;
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
   padding: 80px;
+  background: var(--color-port2);
 }
 .contact-text {
   padding: 20px;
 }
-.contact-text h2 {
-  font-size: 24px;
-  margin-bottom: 1rem;
-  line-height: 4rem;
-  color: var(--color-portifolio1);
+.contact-text h3 {
+  font-size: 36px;
+  margin-bottom: 16px;
+  color: var(--color-port4);
+  text-align: center;
 }
 .contact-text p {
-  margin-bottom: 4rem;
+  margin-bottom: 64px;
+  font-size: 24px;
   text-justify: distribute-all-lines;
-  text-align: justify;
+  text-align: center;
+  color: var(--color-port5);
+}
+.contact-form {
+  text-align: center;
+}
+.btn-orcamento {
+  padding: 15px 45px;
+  background: var(--color-port1);
+  color: var(--color-port5);
+  border: none;
+  border-radius: 10px;
+  font-weight: 550;
+  transition: all 0.5s;
+  font-size: 20px;
+}
+
+.btn-orcamento:hover {
+  background: var(--color-port3);
 }
 /*footer*/
 .developer {
   padding: 1px;
   text-align: center;
-  font-family: "Roboto";
 }
 .developer a {
   font-size: 12px;

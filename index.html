@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/styles/style.css" />
-    <title>João Oliveira | Portifolio</title>
+    <title>João Oliveira | Portfólio</title>
   </head>
   <body>
     <header>
@@ -13,9 +19,9 @@
         <a class="logo" href="">Logo</a>
         <ul>
           <li class="nav-item"><a href="#intro">Inicio</a></li>
-          <li class="nav-item"><a href="">Sobre mim</a></li>
-          <li class="nav-item"><a href="">Projetos</a></li>
-          <li class="nav-item"><a href="">Contato</a></li>
+          <li class="nav-item"><a href="#about">Sobre mim</a></li>
+          <li class="nav-item"><a href="#projects">Projetos</a></li>
+          <li class="nav-item"><a href="#contact">Contato</a></li>
         </ul>
         <div class="menu_responsive">
           <span class="bar"></span>
@@ -26,46 +32,112 @@
     </header>
 
     <main>
-      <section class="intro">
+      <section class="intro" id="intro">
         <div class="intro-text">
-            <h4>Portifolio</h4>
+          <h4>Portfólio</h4>
           <h1>João Oliveira</h1>
-          <p>
-            Full-stack Developer
-          </p>
+          <p>Full-stack Developer</p>
+          <div class="icons-intro">
+            <ul>
+              <li>
+                <a href="https://github.com/jvolive"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/jvoliveira-/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.behance.net/jvolive"
+                  ><i class="fa-brands fa-behance"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about-text">
           <h2>Sobre mim</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-            temporibus omnis esse quod autem laboriosam quia alias quam mollitia
-            consectetur expedita cupiditate maxime iste? Dolore amet aliquam
-            aliquid tempore corrupti.
+            Olá! Me chamo João Oliveira, sou formado em Automação Industrial e
+            atualmente em transição de carreira. Estou cursando Engenharia de
+            Software e tenho certificações em HTML, CSS e JavaScript. Sou uma
+            pessoa proativa e de boa comunicação. Espero você para trabalharmos
+            juntos.
           </p>
+          <div class="icons-about">
+            <ul>
+              <li>
+                <a href="https://www.w3schools.com/html/default.asp"
+                  ><i class="fa-brands fa-html5"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.w3schools.com/css/"
+                  ><i class="fa-brands fa-css3-alt"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.w3schools.com/js/"
+                  ><i class="fa-brands fa-square-js"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.w3schools.com/git/default.asp"
+                  ><i class="fa-brands fa-git-alt"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <section class="projects">
+
+      <section class="projects" id="projects">
         <div class="projects-text">
           <h2>Projetos</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos,
-            aspernatur dolorem dignissimos quod provident facilis voluptatem
-            quisquam vel a corporis modi eius autem mollitia ea alias itaque hic
-            vitae labore!
-          </p>
+          <p>Estes foram alguns projetos realizados por mim</p>
+        </div>
+        <div class="projects-content">
+          <div class="projects1">
+            <a href="https://evoltengenharia.bohr.io/">Evolt Engenharia</a>
+            <img src="/assets/img/evolt.PNG" alt="" />
+            <p>
+              Projeto usando as linguagens HTML, CSS e JavaScript. Usado o
+              framework Swiper.js
+            </p>
+          </div>
+          <div class="projects2">
+            <a href="">Em breve...</a>
+            <img src="" alt="" />
+            <p>Projeto em desenvolvimento</p>
+          </div>
         </div>
       </section>
-      <section class="contact">
+
+      <section class="contact" id="contact">
         <div class="contact-text">
-          <h2>Contato</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit commodi eius culpa porro provident, quaerat quisquam
-            quas fuga harum suscipit ullam necessitatibus earum ut, quidem
-            voluptatum ratione perferendis! Molestias, sint!
-          </p>
+          <h3>Entre em contato</h3>
+          <p>Entre em contato atraves do formulario ou pelas redes sociais</p>
+          <form class="contact-form">
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nova mensagem de contato" />
+            <input type="text" name="nome" placeholder="Nome" required /><br />
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              required /><br />
+            <textarea name="mensagem" placeholder="Mensagem" required></textarea
+            ><br />
+            <button class="btn-orcamento" type="submit">
+              Entrar em contato
+            </button>
+          </form>
         </div>
       </section>
     </main>
