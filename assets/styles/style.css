@@ -410,11 +410,6 @@ body {
     padding: 18px 20px;
     width: 100%;
   }
-  .logo img {
-    align-items: center;
-    max-width: 100px;
-  }
-
   .menu {
     display: block;
     width: 100%;
@@ -446,7 +441,7 @@ body {
     margin: 16px 0;
   }
   .navigation ul li a {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .intro {
     padding: 50px 2%;
@@ -458,12 +453,211 @@ body {
     text-align: center;
   }
   .intro-text h4 {
-    font-size: 16px;
+    font-size: 1.5rem;
     margin-bottom: 5px;
   }
   .intro-text h1 {
-    font-size: 24px;
+    font-size: 2rem;
     margin-bottom: 10px;
+  }
+  .intro-text p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .icons-intro {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icons-intro ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .icons-intro ul li {
+    list-style: none;
+    margin: 0 5px;
+  }
+  .icons-intro ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 35px;
+    color: var(--color-port2);
+    transition: 0.5s;
+  }
+  .icons-intro ul li a:hover {
+    color: #fff;
+    z-index: 0;
+  }
+  .icons-intro ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--color-port4);
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.5s;
+  }
+  .icons-intro ul li a:hover:before {
+    transform: scale(1);
+  }
+  .icons-intro ul li:nth-child(1) a:hover:before {
+    background: #171515;
+  }
+  .icons-intro ul li:nth-child(2) a:hover:before {
+    background: #0e76a8;
+  }
+  .icons-intro ul li:nth-child(3) a:hover:before {
+    background: #053eff;
+  }
+  .about {
+    padding: 50px 2%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    gap: 1rem;
+  }
+  .about-text {
+    text-align: center;
+  }
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .about-text p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .icons-about {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icons-about ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .icons-about ul li {
+    list-style: none;
+    margin: 0 5px;
+  }
+  .icons-about ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 45px;
+    color: var(--color-white);
+    transition: 0.5s;
+  }
+  .icons-about ul li a:hover {
+    color: #fff;
+    z-index: 0;
+  }
+  .icons-about ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--color-white);
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.5s;
+  }
+  .icons-about ul li a:hover:before {
+    transform: scale(1);
+  }
+  .icons-about ul li:nth-child(1) a:hover:before {
+    background: #f24a1c;
+  }
+  .icons-about ul li:nth-child(2) a:hover:before {
+    background: #0170ba;
+  }
+  .icons-about ul li:nth-child(3) a:hover:before {
+    background: #ffdf00;
+  }
+  .icons-about ul li:nth-child(4) a:hover:before {
+    background: #f05033;
+  }
+  .projects {
+    padding: 50px 2%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    gap: 1rem;
+    display: block;
+  }
+  .projects-text {
+    text-align: center;
+  }
+  .projects-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .projects-text p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .projects-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .projects1 {
+    align-items: center;
+    margin-right: 3.2rem;
+  }
+  .projects1 h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--color-port3);
+    text-align: center;
+  }
+  .projects1 img {
+    width: 300px;
+    height: auto;
+    border: 1px solid var(--color-port3);
+    border-radius: 10px;
+  }
+  .projects1 p {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  .projects2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects2 a {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--color-port3);
+    text-align: center;
+  }
+
+  .projects2 p {
+    font-size: 1rem;
   }
 }
 @media (max-width: 320px) {
